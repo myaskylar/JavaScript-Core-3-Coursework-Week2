@@ -24,6 +24,7 @@ const loadRandomImage = async () => {
     try {
         const response = await fetch(apiUrl);
         data = await response.json();
+        console.log(data);
         displayImage(data);
     }catch (error){
         console.error(error);
